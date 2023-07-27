@@ -10,7 +10,7 @@ let line_top = document.querySelector(".line-top-bottom")
 let Svg = document.querySelector(".hamburger input + svg")
 let nav = document.querySelector("nav");
 
-
+// Burger Menu
 bars.addEventListener("click", () => {
   console.log("elsayed");
   nav.classList.toggle("showNav");
@@ -20,6 +20,7 @@ bars.addEventListener("click", () => {
   cenC.classList.toggle("cen")
 })
 
+// Fixed Header
 let fixedHeader = document.querySelector("header")
 let toTop = document.querySelector(".toTop")
 
@@ -41,7 +42,6 @@ toTop.addEventListener("click", () => {
 })
 
 /* SPEED DIAL */
-
 const speedDialButton = document.querySelector('.speed-dial');
 const speedDialPopup = document.querySelector('.speed-dial-popup');
 const speedDialOptions = document.querySelectorAll('.speed-dial-option');
@@ -67,3 +67,30 @@ speedDialOptions.forEach(function (option) {
     speedDialPopup.classList.remove('show');
   });
 });
+
+document.addEventListener('contextmenu', function (e) {
+  e.preventDefault();
+});
+
+// Disable inspect element //
+document.addEventListener('contextmenu', function (e) {
+  e.preventDefault();
+});
+
+document.onkeydown = (e) => {
+  if (e.keyCode == 123) {
+    e.preventDefault();
+  }
+  if (e.ctrlKey && e.shiftKey && e.key == 'I') {
+    e.preventDefault();
+  }
+  if (e.ctrlKey && e.shiftKey && e.key == 'C') {
+    e.preventDefault();
+  }
+  if (e.ctrlKey && e.shiftKey && e.key == 'J') {
+    e.preventDefault();
+  }
+  if (e.ctrlKey && e.key == 'U') {
+    e.preventDefault();
+  }
+};
