@@ -1,0 +1,11 @@
+.heading {
+    padding: 200px 0 100px;
+    background-image: url(../images/partnersSec.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+section {
+    padding-top: var(--sec-padding);
+}

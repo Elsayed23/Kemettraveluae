@@ -1,0 +1,25 @@
+.heading {
+    padding: 200px 0 100px;
+    background-image: url("https://thumbs.dreamstime.com/b/employee-office-making-business-call-asian-90120324.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.contactUs {
+    padding-top: 70px;
+}
+
+.contactUs .row {
+    padding-bottom: 70px;
+}
+
+.contactUs .row .allContacts i {
+    font-size: 23px;
+}
+
+@media (max-width: 991px) {
+    .contactUs .row {
+        gap: 30px;
+        flex-direction: column-reverse;
+    }
+}
