@@ -68,10 +68,6 @@ speedDialOptions.forEach(function (option) {
   });
 });
 
-document.addEventListener('contextmenu', function (e) {
-  e.preventDefault();
-});
-
 // Disable inspect element //
 document.addEventListener('contextmenu', function (e) {
   e.preventDefault();
